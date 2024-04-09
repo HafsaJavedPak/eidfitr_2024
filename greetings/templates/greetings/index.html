@@ -1,0 +1,22 @@
+{%extends "greetings/layout.html"%}
+{%load static%}
+
+{%block title%}
+    Name?
+{%endblock%}
+
+
+{%block body%}
+    <div id="google-search-container">
+        <form action="." method="post">
+            <div id="google-search-box-container"> <!--this is google-search-box-->
+                {% csrf_token %}
+                <div><img id="search-icon"></div>
+                <div><input type="text" name="name" id="google-search-box" style="color: white; font-family: "Source Code Pro", monospace  !important; font-size:300%; " required placeholder="who are you?"></div>
+                <input type="hidden" name="tbm" value="isch">
+                <div><button type="submit" id="enter-button"><img src="{%static 'images/button-star.png'%}" alt="Submit" id="enter-search-icon"></button></div>
+            </div>  
+        </form>
+    </div>
+    </form>
+{%endblock%}

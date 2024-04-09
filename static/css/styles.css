@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.background-gif {
+    /* Styles for your background GIF (adjust as needed) */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 100px;
+}
+
+.bunny-container {
+    position: relative;
+    width: 400px;
+    margin: 100px auto;
+}
+
+#bunny {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#grass {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: green;
+    position: relative;
+}
+
+.grass-blade {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: #008000;  /* Darker green for blades */
+}
+
+#text-container {
+    position: absolute;
+    opacity: 0;  /* Initially hidden */
+    color: red;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
