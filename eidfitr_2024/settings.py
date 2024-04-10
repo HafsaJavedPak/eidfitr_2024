@@ -25,11 +25,13 @@ SECRET_KEY = 'django-insecure-j$yj-!v8%*&s2#vw5(99oa#-xkuzn3&+_9gax@b*uu0dqx_8kx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['eidfitr.azurewebsites.net','127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = ['https://eidfitr.azurewebsites.net']
+CORS_ALLOWED_ORIGINS = ['https://eidfitr.azurewebsites.net']
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -118,8 +120,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-if DEBUG:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+if not DEBUG:
+    # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Replace 'assets' with your actual directory name
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    # STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 else:
     STATICFILES_DIRS = [
         BASE_DIR / "static",
