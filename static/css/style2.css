@@ -18,33 +18,34 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
-@media (min-width: 600px) { 
-    .animated-title {
-      /* color: #222;
-      font-family: Roboto, Arial, sans-serif; */
-      height: 90vmin;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -45%);
-      width: 120vmin;
-    }
-
+@media (min-width:851px) {
+  .animated-title {
+    /* color: #222;
+    font-family: Roboto, Arial, sans-serif; */
+    height: 90vmin;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -45%);
+    width: 120vmin;
+  }
+  
 }
-
-@media (max-width: 599px) { 
-    .animated-title {
-      /* color: #222;
-      font-family: Roboto, Arial, sans-serif; */
-      height: auto;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -45%);
-      width: 100%;
-    }
-
+@media (max-width:850px) {
+  .animated-title {
+    /* color: #222;
+    font-family: Roboto, Arial, sans-serif; */
+    height: 90vmin;
+    left: 50%;
+    /* position: absolute; */
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    top: 50%;
+    transform: translate(-50%, -45%);
+    width: 120vmin;
+  }
+  
 }
 
 .animated-title > div {
@@ -92,3 +93,40 @@
   top: 0;
   transform: translate(0, -100%);
 }
+
+
+
+
+/* for mobile devices */
+/* @media (max-width: 850px) {
+  .animated-title {
+    font-size: medium !important;
+  transform: translate(0%, -45%) !important;
+  width: 100% !important;
+  }
+  @keyframes showTopText {
+    0% {
+      transform: translate3d(50%, 100%, 0);
+    }
+    40%, 60% {
+      transform: translate3d(50%, 50%, 0);
+    }
+    100% {
+      transform: translate3d(50%, 0, 0);
+    }
+  }
+  @keyframes showBottomText {
+    0% {
+      transform: translate3d(50%, -100%, 0);
+    }
+    100% {
+      transform: translate3d(50%, 0, 0);
+    }
+  }
+  .animated-title > div.text-top div {
+    transform: translate(50%, 100%) !important;
+  }
+  .animated-title > div.text-bottom div {
+    transform: translate(0, -100%) !important;
+  }
+} */
