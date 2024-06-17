@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body { 
+  color: white !important;
+  font-family: "Source Code Pro", monospace  !important;
+  font-size: 300%;
+  /* font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal; */
+    background-image: url('stars4.gif'); 
+    /* background-size: cover;  */
+    /* background-position: center;  */
+    background-attachment: fixed; 
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    /* font-family: 'Consolas', monospace !important; */
+  } 
+  input::placeholder {
+    color: gainsboro; /* Or any other desired color */
+}
+input {
+  background-color:transparent; 
+  color: white;
+  font-family: "Source Code Pro", monospace  !important;
+}
+
+  /* #search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  } */
+  
+  #search-box-container {
+    height: 60px;
+    /* margin:0;
+    padding: 0; */
+    /* padding: 5px; */
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    /* width: 100%; */
+  }
+  /* @media (min-width: 600px) {
+    #search-box-container {
+    }
+  }
+  @media (max-width: 599px) {
+    #search-box-container {
+      margin: 10px;
+      width: 90vw;
+    }
+  }
+  #search-box-container #search-icon {
+    margin: 7px;
+    margin-left: 11px;
+    width: 17px;
+    height: auto;
+  } */
+  #search-box-container #enter-search-icon {
+    width: 23px;
+    height: auto;
+  }
+  #search-box-container #enter-button {
+    /* margin-right: 10px; */
+    /* background-image: url('button-star.png'); */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  #search-box-container #search-box {
+    border: none;
+    /* height: 38px; */
+    color: transparent;
+    font-size: large;
+    color:white;
+  }
+  @media (min-width: 600px) {
+  #search-box-container #search-box {
+      width: 500px;
+    }
+  }
+  /* @media (max-width: 599px) {
+    #search-box-container #search-box {
+      width: calc(90vw - 50px);
+    }
+  } */
+  
+  #search-box:focus {
+    outline: none;
+  }
+  
+  #search-box-container:hover {
+    box-shadow: 0 0 10px #dfe1e5;
+  }
+  
